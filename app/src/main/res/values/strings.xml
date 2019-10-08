@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tester</string>
+    <string name="message_label">Success!</string>
+</resources>
