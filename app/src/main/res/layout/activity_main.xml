@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/subtotal_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtotal_label"
+        app:layout_constraintBottom_toTopOf="@+id/discount_percent_label"
+        app:layout_constraintEnd_toStartOf="@+id/subtotal_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/discount_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_percent"
+        app:layout_constraintBottom_toTopOf="@+id/discount_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/discount_percent_label"
+        app:layout_constraintTop_toBottomOf="@+id/subtotal_input" />
+
+    <TextView
+        android:id="@+id/discount_percent_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_percent_label"
+        app:layout_constraintBottom_toTopOf="@+id/discount_amount_label"
+        app:layout_constraintStart_toStartOf="@+id/subtotal_label"
+        app:layout_constraintTop_toBottomOf="@+id/subtotal_input" />
+
+    <TextView
+        android:id="@+id/discount_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_amount_label"
+        app:layout_constraintBottom_toTopOf="@+id/total_label"
+        app:layout_constraintStart_toStartOf="@+id/discount_percent_label"
+        app:layout_constraintTop_toBottomOf="@+id/discount_percent_label" />
+
+    <TextView
+        android:id="@+id/discount_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_amount"
+        app:layout_constraintBottom_toTopOf="@+id/total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/discount_amount_label"
+        app:layout_constraintTop_toBottomOf="@+id/discount_percent" />
+
+    <TextView
+        android:id="@+id/total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/discount_amount_label"
+        app:layout_constraintTop_toBottomOf="@+id/discount_amount_label" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/total_label"
+        app:layout_constraintTop_toBottomOf="@+id/discount_amount" />
+
+    <EditText
+        android:id="@+id/subtotal_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/subtotal_input"
+        app:layout_constraintBottom_toTopOf="@+id/discount_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/subtotal_label"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

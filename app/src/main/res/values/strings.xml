@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Invoice Total</string>
+    <string name="subtotal_label">Subtotal</string>
+    <string name="discount_percent_label">Discount Percent</string>
+    <string name="discount_amount_label">Discount Amount</string>
+    <string name="total_label">Total</string>
+    <string name="subtotal_input"></string>
+    <string name="discount_percent">10%</string>
+    <string name="discount_amount">$15.00</string>
+    <string name="total">$135.00</string>
+</resources>
